@@ -17,28 +17,35 @@
 
 const numeros: number[] = [10, 20, 30, 40, 50];
 
+// Requisito 2
 function mostrarArray(array: number[]): void {
-    console.log('--------------------------------');
-    console.log(`Tamanho: `);
-    console.log(`Array: `);
+    console.log('=======');
+    console.log(`Tamanho: ${array.length}`);
+    console.log(`Array: ${array}`);  
 }
+
+numeros.push(60, 70);
 mostrarArray(numeros);
 
-
-
-
-
-const elementoExcluido = ;
+const elementoExcluido = numeros.pop();
 mostrarArray(numeros);
+
 console.log(`Elemento excluído: ${elementoExcluido}`);
 
-numeros.forEach();
+numeros.forEach((num) => {
+    console.log(num);
+});
 
-const dobrados = numeros.map();
+const dobrados = numeros.map((num) => num * 2);
 mostrarArray(dobrados);
 
-const soma = numeros.reduce();
+
+const soma = numeros.reduce((acc, curr) => acc + curr, 0);
 console.log(`Soma dos elementos do array: ${soma}`);
 
 // para rodar o código, use o comando:
-// npm run build
+// npm run build */
+
+
+
+
